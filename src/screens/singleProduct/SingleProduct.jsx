@@ -28,7 +28,7 @@ const SingleProduct = () => {
 
         {singleProduct ?
           <SingleProductDetails title={singleProduct.title} image={singleProduct.image} price={singleProduct.price} description={singleProduct.description} id={singleProduct.id} />
-          : <h4 className='text-center'>Loading...</h4>}
+          : <div className='flex justify-center' ><span className="loading loading-dots loading-lg text-center"></span></div>}
 
       </div>
     </>

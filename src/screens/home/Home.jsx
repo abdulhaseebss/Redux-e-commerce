@@ -25,12 +25,12 @@ const Home = () => {
     <>
 
 
-      <div className='flex flex-wrap justify-center gap-5 mt-10 p-5'>
+      <div className='flex flex-wrap justify-center gap-5 mt-3 p-5'>
         {allProducts.length > 0 ? allProducts.map((item, index) => {
 
           return <ProductCard key={item.id} image={item.image} title={item.title} price={item.price} description={item.description} id={item.id} />
 
-        }) : <h1> Loading... </h1>}
+        }) :<span className="loading loading-dots loading-lg"></span>}
       </div>
 
 
